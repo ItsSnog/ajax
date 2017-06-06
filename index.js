@@ -4,7 +4,7 @@ var outputElem = document.body;
 function getWeather(){
   var xhr = new XMLHttpRequest;
 
-  xhr.open('GET', 'http://marsweather.ingenology.com/v1/latest/');
+  xhr.open('GET', 'https://marsweather.ingenology.com/v1/latest/');
   xhr.onreadystatechange = function(){
     if(xhr.readyState !== 4) return;
     if(xhr.status !== 200){
